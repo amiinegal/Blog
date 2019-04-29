@@ -22,6 +22,10 @@ def create_app(config_class=Config):
     app = Flask(__name__)
     app.config.from_object(Config)
 
+
+# setting config
+    from .request import configure_request
+    configure_request(app)
     # configure UploadSet
     #configure_uploads(app,photos)
 
