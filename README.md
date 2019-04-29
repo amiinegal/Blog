@@ -6,8 +6,13 @@ _A blog post that helps a user to post his blogs and is able to delete,update an
 #### amin egal
 
 ### Setup and installation
-* Search for repository name
-* Click on clone/download to get import link
+* _Click on `clone/download` to get import link_
+* Install the prerequisites either globally or in a virtual environment.
+* Install via pip:
+            ``` pip install -r requirements.txt ```
+
+*  Run by:
+           ``` pyhton3.6 manage.py server ```
 
 
 
