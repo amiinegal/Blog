@@ -27,7 +27,7 @@ class TestConfig(Config):
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://amin:999@localhost/blogs'
 
 class DevConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://amin:999@localhost/blogapp'
+    # SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://amin:999@localhost/blogapp'
     DEBUG = True
 
 config_options = {
