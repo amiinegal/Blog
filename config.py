@@ -4,6 +4,7 @@ import os
 class Config:
     BASE_QUOTES_API_URL = 'http://quotes.stormconsultancy.co.uk/random.json'
     SECRET_KEY = '5791628bb0b13ce0c676dfde280ba245'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://amin:999@localhost/blogapp'
 
     # SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
     # SQLALCHEMY_TRACK_MODIFICATIONS = False
@@ -26,7 +27,7 @@ class TestConfig(Config):
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://amin:999@localhost/blogs'
 
 class DevConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://amin:999@localhost/blogs'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://amin:999@localhost/blogapp'
     DEBUG = True
 
 config_options = {
